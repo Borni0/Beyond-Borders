@@ -1,5 +1,4 @@
-# Beyond Borders — `finTech`
-
+# Beyond Borders -
 > Your global education journey starts with financial clarity.
 >
 > AI Financial Readiness & Cross-Border Finance Copilot for International Students.
