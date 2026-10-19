@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens from spec §4.1 */
+:root {
+  --color-midnight: #101C2C;
+  --color-teal: #176B63;
+  --color-teal-dark: #0F4F49;
+  --color-mint: #BDE9D9;
+  --color-ivory: #F7F6F1;
+  --color-slate: #64748B;
+  --color-amber: #D97706;
+  --color-red: #C2413B;
+  --color-border: #E2E8F0;
+}
+
+html,
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-midnight);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tabular numerals for amounts (spec §4.1) */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Visible focus indicators (spec §4.7) */
+*:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduced motion (spec §4.7) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
